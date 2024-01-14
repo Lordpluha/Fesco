@@ -1,0 +1,410 @@
+article {
+	margin-top: 100vh;
+	position: relative;
+	width: 100%;
+	z-index: 5;
+	background-color: #fff;
+	
+	.about_us {
+		display: block;
+		width: 100%;
+		height: 100vh;
+
+		#content {
+			display: flex;
+			justify-content: space-around;
+			width: 100%;
+			height: 100%;
+
+			#about_us {
+				width: 0;
+				height: 0;
+				border: none;
+				position: absolute;
+			}
+
+			.section__content {
+				max-width: 45%;
+
+				.section__header {
+					.section__title {
+						color: #bf9e7b;
+						@include adaptive-value('margin-top', 90, 20, 1);
+						@include adaptive-value('font-size', 56, 30, 1);
+						@include adaptive-value('margin-bottom', 30, 20, 1);
+						text-align: center;
+					}
+				}
+
+				p {
+					text-align: center;
+					color: #808080;
+					@include adaptive-value('font-size', 17, 10, 1);
+					@include adaptive-value('margin-bottom', 40, 20, 1);
+				}
+			}
+
+			aside {
+				max-width: 45%;
+
+				.contact_info {
+					margin-top: -45%;
+					width: 100%;
+					background-color: #141723;
+					color: #fff;
+
+					@include adaptive-value('padding', 20, 10, 1);
+
+					h3 {
+						color: #bf9e7b;
+						@include adaptive-value('font-size', 25, 15, 1);
+					}
+
+					p {
+						@include adaptive-value('margin-top', 15, 10, 1);
+						@include adaptive-value('margin-bottom', 15, 10, 1);
+						@include adaptive-value('font-size', 13, 8, 1);
+					}
+
+					.addr {
+						@include adaptive-value('margin-top', 15, 10, 1);
+						h6 {
+							@include adaptive-value('font-size', 15, 10, 1);
+						}
+
+						p {
+							@include adaptive-value('font-size', 13, 8, 1);
+							margin-bottom: 2px;
+						}
+
+						a {
+							color: #bf9e7b;
+							border: none;
+							border-bottom: 1px solid #bf9e7b;
+							@include adaptive-value('font-size', 13, 8, 1);
+						}
+
+						.open_hours {
+							@include adaptive-value('margin-top', 15, 10, 1);
+							h6 {
+								@include adaptive-value('font-size', 15, 10, 1);
+							}
+
+							p {
+								@include adaptive-value('font-size', 13, 8, 1);
+								&.hours1 {
+
+								}
+
+								.hours2 {
+
+								}
+							}
+						}
+
+						.Reservation {
+							display: block;
+							margin: 0 auto;
+							@include adaptive-value('margin-top', 20, 10, 1);
+
+							@include adaptive-value('width', 171, 100, 1);
+							@include adaptive-value('height', 43, 20, 1);
+							@include adaptive-value('padding-top', 5, 5, 1);
+							@include adaptive-value('padding-bottom', 10, 5, 1);
+							border: 1px solid #be9d7a;
+
+							a {
+								text-align: center;
+								border: none;
+								@include adaptive-value('font-size', 15, 10, 1);
+								color: #fff;
+							}
+						}
+					}
+				}
+
+				.preview {
+					margin-top: 20px;
+					height: 60%;
+					width: 100%;
+					background-image: url('../../img/header/BG.jpg');
+				}
+			}
+		}
+	}
+
+	.our_sepialities {
+		margin-top: 50px;
+		background-color: #4c4d4f;
+
+		#content {
+			@include adaptive-value('padding-bottom', 75, 50, 1);
+			.section__header {
+				@include adaptive-value('margin-top', 65, 30, 1);
+				.section__title {
+					text-align: center;
+					@include adaptive-value('font-size', 56, 30, 1);
+					color: #fff;
+				}
+
+				.section__intro {
+					display: block;
+					margin: 0 auto;
+					text-align: center;
+					width: 70%;
+					@include adaptive-value('margin-top', 25, 10, 1);
+					@include adaptive-value('font-size', 15, 10, 1);
+					font-weight: 700;
+				}
+			}
+
+			.specs__menu {
+				@include adaptive-value('margin-top', 40, 30, 1);
+				display: flex;
+				justify-content: space-around;
+				margin: 0 auto;
+
+				.specs__elem {
+					position: relative;
+					display: block;
+					margin: 5px;
+					width: 25%;
+					@include adaptive-value('min-height', 200, 100, 1);
+
+					.specs__preview {
+						background-color: #141723;
+						height: 70%;
+						background-image: url("../../img/header/BG.jpg");
+
+						img {
+							display: none;
+						}
+					}
+
+					.spec__about {
+						display: block;
+						width: 100%;
+						background-color: #fff;
+						@include adaptive-value('padding-top', 24, 10, 1);
+						@include adaptive-value('padding-left', 5, 2, 1);
+						@include adaptive-value('padding-bottom', 24, 10, 1);
+
+						p {
+							text-align: center;
+							color: #bf9e7b;
+							@include adaptive-value('font-size', 15, 10, 1);
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.our_menu {
+		width: 100%;
+		background-color: #141723;
+
+		#content {
+			padding: 30px 20px 60px;
+			@include adaptive-value('padding-top', 60, 40, 1);
+
+			.section__header {
+				display: block;
+				width: 100%;
+				height: auto;
+				
+				.section__title {
+					color: #bf9e7b;
+					text-align: center;
+					@include adaptive-value('font-size', 60, 30, 1);
+				}
+
+				.section__intro {
+					margin: 0 auto;
+					text-align: center;
+					color: #fff;
+					@include adaptive-value('margin-top', 30, 20, 1);
+					@include adaptive-value('font-size', 15, 10, 1);
+				}
+				
+			}
+
+			.pizzas, .deserts {
+				display: block;
+				
+				width: 100%;
+				height: auto;
+				@include adaptive-value('margin-top', 80, 40, 1);
+
+				&.deserts {
+					margin-top: 0;
+					padding: 100px 0;
+				}
+
+				h1 {
+					text-align: center;
+					text-transform: uppercase;
+					font-family: 'Raleway', sans-serif;
+					font-weight: 600;
+					color: #bf9e7b;
+				}
+
+				div {
+					display: grid;
+					grid-template-rows: repeat(4, 1fr);
+					grid-template-columns: repeat(2, 1fr);
+					width: 100%;
+					height: 100%;
+					grid-gap: 2%;
+					@include adaptive-value('margin-top', 50, 30, 1);
+
+					div {
+						width: 100%;
+						display: flex;
+						justify-content: space-between;
+						height: 100%;
+						margin-top: 10px;
+
+						div {
+							display: block;
+							width: 70%;
+							color: #fff;
+
+							h1 {
+								color: #fff;
+								text-align: left;
+								@include adaptive-value('font-size', 15, 10, 1);
+							}
+
+							p {
+								@include adaptive-value('margin-top', 16, 8, 1);
+								text-align: left;
+								@include adaptive-value('font-size', 14, 8, 1);
+								line-height: 170%;
+							}
+						}
+
+						.pizza__costs ,.desert__costs {
+							display: inline-block;
+							width: 30%;
+							text-align: center;
+							color: #bf9e7b;
+							margin-top: 7%;
+						}
+					}
+				}
+			}
+
+			.menu_more {
+				display: block;
+				margin: 0 auto;
+				border: none;
+				background-color: #be9d7a;
+
+				@include adaptive-value('padding-top', 15, 10, 1);
+				@include adaptive-value('padding-bottom', 20, 10, 1);
+				@include adaptive-value('padding-left', 50, 30, 1);
+				@include adaptive-value('padding-right', 50, 30, 1);
+
+				a {
+					border: none;
+					color: #141723;
+					@include adaptive-value('font-size', 15, 10, 1);
+					font-family: 'Raleway', sans-serif;
+					font-weight: 500;
+				}
+			}
+		}
+	}
+
+	.book_a_table {
+		display: block;
+		background-color: #4c4d4f;
+
+		#content {
+			display: block;
+			width: 100%;
+			height: auto;
+			@include adaptive-value('padding-top', 52, 30, 1);
+			@include adaptive-value('padding-bottom', 20, 10, 1);
+
+			.section__header {
+				display: block;
+				width: 100%;
+				height: auto;
+				
+				
+				.section__title {
+					color: #fff;
+					text-align: center;
+					@include adaptive-value('font-size', 60, 30, 1);
+				}
+
+				.section__intro {
+					margin: 0 auto;
+					text-align: center;
+					color: #000;
+					font-weight: 500;
+					@include adaptive-value('margin-top', 30, 20, 1);
+					@include adaptive-value('font-size', 15, 10, 1);
+				}
+				
+			}
+
+			form.book_a_table {
+				display: block;
+				@include adaptive-value('margin-top', 75, 50, 1);
+				border: none;
+				width: 100%;
+				font-family: 'Raleway', sans-serif;
+				cursor: normal;
+
+				.select_box {
+					display: flex;
+					justify-content: space-between;
+					width: 100%;
+
+					div {
+						width: 32%;
+
+						label {
+							font-weight: 400;
+							text-transform: uppercase;
+							@include adaptive-value('font-size', 15, 10, 1);
+							color: #fff;
+						}
+
+						select {
+							display: block;
+							margin: 18px auto;
+							width: 100%;
+							padding: 10px 20px;
+							background-color: #fff;
+
+							option {
+
+							}
+						}
+					}
+				}
+
+				button {
+					display: block;
+					margin: 0 auto;
+					border: none;
+
+					@include adaptive-value('margin-top', 20, 10, 1);
+
+					@include adaptive-value('padding', 50, 30, 1);
+					@include adaptive-value('padding-top', 15, 10, 1);
+					@include adaptive-value('padding-bottom', 15, 10, 1);
+					background-color: #be9d7a;
+					color: #000;
+					@include adaptive-value('font-size', 20, 10, 1);
+
+
+				}
+			}
+		}
+	}
+}
